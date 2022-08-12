@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* html{scroll-behavior: smooth;}   부드러운 자동 스크롤  IE 에서는 사용 안됨*/
+
+#nav{
+    position: fixed;
+    left: 0; top: 0; right: 0;
+    background-color: rgba(255,255,255, 0.3);
+} 
+#nav h1{
+    float: left;
+    color: white;
+    font-size: 250%;
+    padding: 1% 2%;
+} 
+#nav ul{
+    float: right;
+    padding: 2% 1% 0% 0%;
+} 
+#nav ul li{
+    float: left;
+    padding: 5px 5px 5px 15px;
+    
+
+} 
+#nav ul li a{color: white; text-transform: capitalize; } 
+
+#nav ul li.active a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: capitalize;
+} 
+
+
+/* id 변수 불러올때는 # 사용 */
+#contents{}
+
+#contents>div{
+    height: 100vh;
+}
+
+#contents>div h2{
+    padding-top: 10%; /*  % 의 기준은 부모의 넓이 */
+    text-align: center;
+    font-size: 90px;
+}
+
+/* div이면서section1인 것을 불러오는 명령어 */
+#contents>div#section1{background: linear-gradient(to right, #1565C0, #b92b27);}
+#contents>div#section2{background: linear-gradient(to right, #f12711, #f5af19);}
+#contents>div#section3{background: linear-gradient(to right, #dd3e54, #6be585);}
+#contents>div#section4{background: linear-gradient(to right, #654ea3, #eaafc8);}
+#contents>div#section5{background: linear-gradient(to right, #ffefba, #ffffff);}
+#contents>div#section6{background: linear-gradient(to right, #a8c0ff, #3f2b96);}
